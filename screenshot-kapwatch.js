@@ -6,7 +6,7 @@ const puppeteer = require('puppeteer');
   page.setViewport({width: 1024, height: 700});
   await page.goto('https://kapwatch.com');
   await page.waitFor(5000);
-  await page.screenshot({path: '/home/kapwatch/kapwatch-now.png'});
+  await page.screenshot({path: 'screenshot.png'});
 
   await browser.close();
 })();
